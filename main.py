@@ -61,7 +61,7 @@ async def test(request):
     with tracer.span(name="teste") as span:
         conn = await connect_to_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT * from test_table")
+        cursor.execute("SELECT * from IMP_TEST.ISO_COUNTRY")
         rows = cursor.fetchall()
         logger.exception("here is your log")
     return json({"data": rows})
