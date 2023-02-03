@@ -52,7 +52,8 @@ async def connect_to_db():
             host=os.getenv('DB_HOST'),
             database=os.getenv('DB'),
             user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASS')
+            password=os.getenv('DB_PASS'),
+            sslmode=true
         )
     return conn
 
