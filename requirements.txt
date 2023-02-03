@@ -1,0 +1,4 @@
+sanic
+opencensus
+opencensus-ext-azure
+psycopg2
